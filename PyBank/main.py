@@ -14,7 +14,7 @@ total_net = 0
 
 
 
-with open("budget_data_file") as csvfile:
+with open("budget_data_file.csv") as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter= ",")
 
@@ -53,6 +53,7 @@ with open("budget_data_file") as csvfile:
 net_monthly_average = sum(net_change_list)/len(net_change_list) 
 
 print(f"Total Months: {total_months}")
+print(f"Total Net: {total_net}")
 
 
        
